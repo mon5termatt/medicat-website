@@ -5,15 +5,15 @@
       "links": [
         {
           "name": "Mirror 1",
-          "link": "https://files.dog/OD%20Rips/MediCat/v21.12/"
+          "link": "https://files.dog/OD%20Rips/MediCat/v21.12/MediCat.USB.v21.12.7z"
         },
         {
           "name": "Mirror 2",
-          "link": "https://medicat.itrio.xyz/"
+          "link": "https://files.medicatusb.com/files/v21.12/MediCat.USB.v21.12.7z"
         },
         {
           "name": "Mirror 3",
-          "link": "https://files.medicatusb.com/files/v21.12/"
+          "link": "https://medicat.itrio.xyz/"
         }
       ]
     },
