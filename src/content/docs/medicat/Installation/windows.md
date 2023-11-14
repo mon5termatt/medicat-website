@@ -17,7 +17,7 @@ The recommended way of installing Medicat is to use the [Windows Auto Installer]
 
 # Manual Install
 
-1. Download and open Ventoy2Disk from [Ventoy's Site](https://www.ventoy.net/en/download.html)
+1. Download Ventoy2Disk from [Ventoy's Site](https://www.ventoy.net/en/download.html)
 2. Install Ventoy to your USB Drive
 3. Format your USB as NTFS using the Windows format utility
 4. Extract the Medicat .7z file to the root of your USB drive Using 7-Zip or WinRar
