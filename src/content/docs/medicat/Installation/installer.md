@@ -1,11 +1,6 @@
 ---
 draft: false
 title: "Medicat Installer"
-image:
-  {
-    src: "https://github.com/mon5termatt/medicat_installer/blob/main/icon.png?raw=true",
-    alt: "medicat installer logo",
-  }
 publishDate: "2023-7-24"
 category: "Installer"
 author: "MON5TERMATT"
@@ -14,11 +9,7 @@ tags: [medicat, installer]
 
 # Medicat Installer
 
-![Logo](icon.png)
-
-# [Visit the Medicat Site](https://medicatusb.com/)
-
-### [We are always looking for people to help improve this code and medicat, Inquire in the discord :D](https://discord.gg/medicat)
+![Logo](https://github.com/mon5termatt/medicat_installer/blob/main/icon.png?raw=true)
 
 # Compatibility
 
@@ -27,7 +18,7 @@ tags: [medicat, installer]
 
 #### Requirements for Windows
 
-- Windows 1703+ (releases after 2017)
+- Windows 10 1703+ (releases after 2017)
 - cURL
 - Half a brain
 
@@ -46,35 +37,3 @@ The main file with guided prompts for downloading and installing Medicat USB
 ### Medicat_Installer.sh
 
 Main file for installing via linux command line
-Coded by [@SkeletonMan03](https://github.com/SkeletonMan03)
-
-# Programs Included / Downloaded during install
-
-### Files Downloaded
-
-1. [aria2](https://github.com/aria2/aria2)
-   - For downloading from torrent file.
-2. [7Zip](https://www.7-zip.org/)
-   - For File Extraction
-3. [IPget](https://github.com/ipfs/ipget)
-   - IPFS wget basically
-4. [FolderBrowse](https://github.com/TheBATeam/FolderBrowse-by-Fatih-Kodak)
-   - To find out what drive you want to install to without typing stuff
-5. [QuickSFV](http://www.quicksfv.org/)
-   - For hashing the big files somewhat quickly...
-
-#### The Following are for the menu system.
-
-1. [batbox](https://github.com/TheBATeam/BATBOX-An-Awesome-Batch-Plugin)
-2. [Box](https://github.com/TheBATeam/Box-Function-2.0)
-3. [Button](https://github.com/TheBATeam/Button-Function-2.0-by-Kvc)
-4. [Getinput](https://github.com/TheBATeam/GetInput-By-Aacini)
-5. [Getlen](https://github.com/TheBATeam/Getlen-Function-2.0-by-Kvc)
-
-# Credits
-
-- [@SkeletonMan03](https://github.com/SkeletonMan03)
-- [@Teknoist](https://github.com/Teknoist)
-- [@Samega7Cattac](https://github.com/Samega7Cattac)
-- [@Ben-Hampson](https://github.com/Ben-Hampson)
-- Along with all the others helping in the discord.
