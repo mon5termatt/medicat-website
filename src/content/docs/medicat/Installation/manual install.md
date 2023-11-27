@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Windows"
-publishDate: "2023-7-24"
+title: "Manual Install"
+publishDate: "2023-11-27"
 category: "Install"
 author: "MON5TERMATT"
 tags: [medicat, install, download]
