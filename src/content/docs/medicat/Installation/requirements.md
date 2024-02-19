@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Requirements"
-publishDate: "2023-7-24"
+publishDate: "2024-2-18"
 category: "Installer"
 author: "MON5TERMATT"
 tags: [medicat, installer]
@@ -13,7 +13,7 @@ tags: [medicat, installer]
 
 ## Recommendations
 
-We SRONGLY suggest using a USB 3.0 or above as using USB 2 will SEVERLY damage the speed of your install and some tools may fail to boot.
+We **strongly** suggest using a USB 3.0 or above as using USB 2 will **severely** dampen the speed of your install and some tools may fail to boot.
 
 That being said Medicat will boot with computer that only has 2.0 slots.
 
