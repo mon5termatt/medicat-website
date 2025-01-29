@@ -1,0 +1,47 @@
+{
+  "Providers": [
+    {
+      "name": "Direct Download Mirrors",
+      "links": [
+        {
+          "name": "Mirror 1",
+          "link": "https://files.dog/OD%20Rips/MediCat/v21.12/MediCat.USB.v21.12.7z"
+        },
+        {
+          "name": "Mirror 2",
+          "link": "https://files.medicatusb.com/files/v21.12/MediCat.USB.v21.12.7z"
+        },
+        {
+          "name": "Mirror 3",
+          "link": "https://medicat.itrio.xyz/"
+        },
+        {
+          "name": "Mirror 4",
+          "link": "https://medicat.tcbl.dev/"
+        }
+      ]
+    },
+    {
+      "name": "Google Drive",
+      "links": [
+        {
+          "name": "Mirror 1",
+          "link": "https://drive.google.com/drive/folders/0B80MkZEQZejCSDZsY2NKbVJNWjg?resourcekey=0-wMGHCpg8SwR13oOYDfjPuA"
+        },
+        {
+          "name": "Mirror 2",
+          "link": "https://drive.google.com/drive/folders/1R_05cS0Vq24xfuX27j75OiZrC_mZgQUB"
+        }
+      ]
+    },
+    {
+      "name": "Mega",
+      "links": [
+        {
+          "name": "Mirror 1",
+          "link": "https://mega.nz/folder/jg1DWbaK#Qo6XsYzjx-HyIpxj8xQTiQ"
+        }
+      ]
+    }
+  ]
+}

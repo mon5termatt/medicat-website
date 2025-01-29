@@ -2,6 +2,8 @@
 import Link from "@components/ui/link.astro";
 import Icon from "astro-icon";
 import Tabs from "@components/home/downloadTabs.svelte";
+import Misctabs from "@components/home/miscdownload.svelte";
+
 ---
 
 <div class="flex flex-col justify-center gap-4 max-w-[70%] mx-auto py-5">
@@ -93,6 +95,8 @@ import Tabs from "@components/home/downloadTabs.svelte";
   <Tabs client:visible />
 </div>
 
+
+
 <div class="flex flex-col justify-center gap-4 max-w-[70%] mx-auto py-5">
   <div class="text-center py-5 px-3 bg-black/60 shadow-2xl rounded">
     <h2 class="text-slate-200 text-3xl lg:text-5xl font-bold lg:tracking-tight">
@@ -103,3 +107,11 @@ import Tabs from "@components/home/downloadTabs.svelte";
     </p>
   </div>
  </div>
+
+ <div class="text-center py-5 px-3 bg-black/60 shadow-2xl rounded">
+  <h2 class="text-slate-200 text-3xl lg:text-5xl font-bold lg:tracking-tight">
+    Other Downloads
+  </h2>
+  <p class="text-lg mt-4 text-slate-300"> Other Files. Includes Items such as individual tools.
+<Misctabs client:visible />
+</div>
