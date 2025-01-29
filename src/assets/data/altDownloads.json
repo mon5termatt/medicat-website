@@ -4,20 +4,12 @@
       "name": "Direct Download Mirrors",
       "links": [
         {
-          "name": "Mirror 1",
+          "name": "Mirror 1 - files.dog",
           "link": "https://files.dog/OD%20Rips/MediCat/v21.12/MediCat.USB.v21.12.7z"
         },
         {
-          "name": "Mirror 2",
+          "name": "Mirror 2 - files.medicatusb.com",
           "link": "https://files.medicatusb.com/files/v21.12/MediCat.USB.v21.12.7z"
-        },
-        {
-          "name": "Mirror 3",
-          "link": "https://medicat.itrio.xyz/"
-        },
-        {
-          "name": "Mirror 4",
-          "link": "https://medicat.tcbl.dev/"
         }
       ]
     },
