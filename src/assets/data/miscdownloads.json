@@ -4,37 +4,44 @@
       "name": "VHD",
       "links": [
         {
-          "name": "Mirror 1",
+          "name": "Magnet",
+          "link": "https://files.dog/OD%20Rips/MediCat/v21.12/MediCat.USB.v21.12.7z"
+        },
+        {
+          "name": "DDL",
           "link": "https://files.medicatusb.com/files/VHD/MediCat_VHD.zip"
+        },
+        {
+          "name": "Mega",
+          "link": "https://mega.nz/folder/n80QiDbZ#ruUn3qCRHvhdo25RbWVqkg/aff=oYmg62o_wlo"
         }
       ]
     },
     {
-      "name": "OTHER2",
+      "name": "Second Opinion",
       "links": [
         {
-          "name": "M1",
-          "link": ""
+          "name": "Magnet",
+          "link": "magnet:?xt=urn:btih:E1BD4B578EB9E67C46FFDB29AC5CE8776429BA6C"
         },
         {
-          "name": "M2",
-          "link": ""
+          "name": "Mega",
+          "link": "https://mega.nz/folder/axVxwAzC#Dv6qQtMH0Mf5j2G0CSGPSg/aff=oYmg62o_wlo"
         }
       ]
-    },
-    {
-      "name": "OTHER3",
-      "links": [
-        {
-          "name": "M1",
-          "link": ""
-        },
-        {
-          "name": "M2",
-          "link": ""
-        }
-      ]
-    },
     }
+    // {
+    //   "name": "T3",
+    //   "links": [
+    //     {
+    //       "name": "DL1",
+    //       "link": "#"
+    //     },
+    //     {
+    //       "name": "DL2",
+    //       "link": "#"
+    //     }
+    //   ]
+    // }
   ]
 }
