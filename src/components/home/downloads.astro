@@ -95,8 +95,6 @@ import Misctabs from "@components/home/miscdownload.svelte";
   <Tabs client:visible />
 </div>
 
-
-
 <div class="flex flex-col justify-center gap-4 max-w-[70%] mx-auto py-5">
   <div class="text-center py-5 px-3 bg-black/60 shadow-2xl rounded">
     <h2 class="text-slate-200 text-3xl lg:text-5xl font-bold lg:tracking-tight">
@@ -106,12 +104,15 @@ import Misctabs from "@components/home/miscdownload.svelte";
     MediCat.USB.v21.12.7z <br>MD5: db50f96a5c7b5ec6dc9ed77ea29fffb0 <br>SHA1: 2cbf5f337849a11084124a79a1b8d7e77eaca7d5  
     </p>
   </div>
+
+
+  <div class="text-center py-5 px-3 bg-black/60 shadow-2xl rounded">
+    <h2 class="text-slate-200 text-3xl lg:text-5xl font-bold lg:tracking-tight">
+      Other Downloads
+    </h2>
+    <p class="text-lg mt-4 text-slate-300"> Other Files. Includes Items such as individual tools.
+  <Misctabs client:visible />
+  </div>
+
  </div>
 
- <div class="text-center py-5 px-3 bg-black/60 shadow-2xl rounded">
-  <h2 class="text-slate-200 text-3xl lg:text-5xl font-bold lg:tracking-tight">
-    Other Downloads
-  </h2>
-  <p class="text-lg mt-4 text-slate-300"> Other Files. Includes Items such as individual tools.
-<Misctabs client:visible />
-</div>
