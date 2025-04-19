@@ -1,5 +1,10 @@
 ---
-title: EaseUS Data Recovery Wizard
+draft: false
+title: "EaseUS Data Recovery Wizard"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for EaseUS Data Recovery Wizard in MediCat USB
 ---
 

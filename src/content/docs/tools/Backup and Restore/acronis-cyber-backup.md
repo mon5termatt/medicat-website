@@ -1,5 +1,10 @@
 ---
-title: Acronis Cyber Backup
+draft: false
+title: "Acronis Cyber Backup"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Acronis Cyber Backup in MediCat USB
 ---
 

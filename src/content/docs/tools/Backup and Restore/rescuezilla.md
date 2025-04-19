@@ -1,5 +1,10 @@
 ---
-title: Rescuezilla
+draft: false
+title: "Rescuezilla"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Rescuezilla in MediCat USB
 ---
 

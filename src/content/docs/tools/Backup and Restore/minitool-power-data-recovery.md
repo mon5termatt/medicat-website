@@ -1,5 +1,10 @@
 ---
-title: MiniTool Power Data Recovery
+draft: false
+title: "MiniTool Power Data Recovery"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for MiniTool Power Data Recovery in MediCat USB
 ---
 

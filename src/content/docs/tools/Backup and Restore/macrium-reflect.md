@@ -1,5 +1,10 @@
 ---
-title: Macrium Reflect
+draft: false
+title: "Macrium Reflect"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Macrium Reflect in MediCat USB
 ---
 

@@ -1,5 +1,10 @@
 ---
-title: Acronis True Image
+draft: false
+title: "Acronis True Image"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Acronis True Image in MediCat USB
 ---
 
