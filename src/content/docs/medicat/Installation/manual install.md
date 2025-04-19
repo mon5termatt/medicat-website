@@ -1,24 +1,86 @@
 ---
 draft: false
-title: "Manual Install"
-publishDate: "2023-11-27"
-category: "Install"
+title: "Manual Installation Guide"
+publishDate: "2024-4-19"
+category: "Installation"
 author: "MON5TERMATT"
-tags: [medicat, install, download]
+tags: [medicat, installation, manual, guide]
 ---
 
-# Disable Antivirus
+# Manual Installation Guide
 
-Before installation, open your Antivirus and disable any Real-Time protection that's enabled.
+## ⚠️ Important Pre-Installation Steps
 
-# Auto Installer
+1. **Disable Antivirus**
+   - Open your Antivirus software
+   - Disable Real-Time protection
+   - Temporarily disable any other security features that might interfere with the installation
 
-The recommended way of installing Medicat is to use the [Windows Auto Installer](https://github.com/mon5termatt/medicat_installer/releases). You simply open the batch file and follow the on screen directions to install.
+2. **Download Required Software**
+   - [Ventoy](https://www.ventoy.net/en/download.html) - Bootable USB creator
+   - [7-Zip](https://www.7-zip.org/download.html) - For extracting .7z files
+   - [Medicat ISO](https://medicatusb.com#downloads) - Latest release
 
-# Manual Install
+## Installation Steps
 
-1. Download Ventoy from [Ventoy's Site](https://www.ventoy.net/en/download.html)
-2. Install Ventoy to your USB Drive
-3. Format your USB as NTFS using the Windows format utility
-4. Extract the Medicat .7z file to the root of your USB drive Using 7-Zip or WinRar
-5. Verify everything is there.
+### 1. Prepare Your USB Drive
+- Insert your USB drive (minimum 32GB recommended)
+- Backup any important data from the USB drive as it will be formatted
+- Open Windows Disk Management to verify the drive letter
+
+### 2. Install Ventoy
+1. Download and extract Ventoy
+2. Run `Ventoy2Disk.exe` as Administrator
+3. Select your USB drive from the dropdown menu
+4. Click "Install" and wait for the process to complete
+5. Verify the installation was successful
+
+### 3. Format the USB Drive
+1. Open Windows File Explorer
+2. Right-click on your USB drive
+3. Select "Format"
+4. Choose the following settings:
+   - File System: NTFS
+   - Allocation Unit Size: Default
+   - Quick Format: Checked
+5. Click "Start" and wait for formatting to complete
+
+### 4. Extract Medicat
+1. Download the latest Medicat .7z file
+2. Right-click the .7z file and select "7-Zip" > "Extract Here"
+3. Copy all extracted files to the root of your USB drive
+4. Verify the following folders and files are present:
+   ```
+   USB_DRIVE/
+   ├── Antivirus/
+   ├── Backup/
+   ├── Backup_and_Recovery/
+   ├── Boot_Repair/
+   ├── Diagnostic_Tools/
+   ├── Live_Operating_Systems/
+   ├── OSimages/
+   ├── Partition_Tools/
+   ├── Password_Removal/
+   ├── PortableApps/
+   ├── Programs/
+   ├── System/
+   ├── ventoy/
+   ├── VHD/
+   └── Windows_Recovery/
+   ```
+
+### 5. Final Verification
+1. Ensure all directories and files listed above are present
+2. Verify that `Start.exe` is present in the root directory
+3. Check that the `ventoy` directory contains the necessary boot files
+4. Safely eject your USB drive
+
+## Post-Installation
+
+1. Re-enable your Antivirus software
+2. Test the USB drive by booting from it
+3. If you encounter any issues, refer to the [Troubleshooting Guide](/docs/medicat/troubleshooting/)
+
+## Alternative Installation Method
+
+If you prefer an automated installation process, you can use the [Windows Auto Installer](https://github.com/mon5termatt/medicat_installer/releases) which handles all these steps automatically.
