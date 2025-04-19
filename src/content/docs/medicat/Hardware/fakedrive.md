@@ -2,7 +2,7 @@
 draft: false
 title: "USB Drive Warning: Avoiding Counterfeit Drives"
 publishDate: "2024-4-19"
-category: "Installation"
+category: "Hardware"
 author: "MON5TERMATT"
 tags: [medicat, usb, warning, scam]
 ---

@@ -19,7 +19,7 @@ tags: [medicat, installation, manual, guide]
 2. **Download Required Software**
    - [Ventoy](https://www.ventoy.net/en/download.html) - Bootable USB creator
    - [7-Zip](https://www.7-zip.org/download.html) - For extracting .7z files
-   - [Medicat ISO](https://medicatusb.com#downloads) - Latest release
+   - [Medicat](https://medicatusb.com#downloads) - Latest release
 
 ## Installation Steps
 

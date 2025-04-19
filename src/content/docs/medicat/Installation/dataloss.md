@@ -1,10 +1,10 @@
 ---
 draft: false
-title: "Data Loss and Hardware Disclaimer"
-publishDate: "2024-4-19"
-category: "Installation"
+title: "Data Loss Disclaimer"
+publishDate: "2025-4-19"
+category: "Install"
 author: "MON5TERMATT"
-tags: [medicat, disclaimer, legal, warning]
+tags: [medicat, install, disclaimer, dataloss]
 ---
 
 # Data Loss and Hardware Disclaimer

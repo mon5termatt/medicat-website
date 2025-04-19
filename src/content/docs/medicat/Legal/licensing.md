@@ -2,7 +2,7 @@
 draft: false
 title: "Licensing and Legal Information"
 publishDate: "2024-4-19"
-category: "Installation"
+category: "Legal"
 author: "MON5TERMATT"
 tags: [medicat, installation, legal, licensing]
 ---
