@@ -1,5 +1,10 @@
 ---
-title: AOMEI Backupper
+draft: false
+title: "AOMEI Backupper"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for AOMEI Backupper in MediCat USB
 ---
 

@@ -1,5 +1,10 @@
 ---
-title: Elcomsoft System Recovery
+draft: false
+title: "Elcomsoft System Recovery"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Elcomsoft System Recovery in MediCat USB
 ---
 

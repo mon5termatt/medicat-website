@@ -1,5 +1,10 @@
 ---
-title: Symantec Ghost
+draft: false
+title: "Symantec Ghost"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for Symantec Ghost in MediCat USB
 ---
 

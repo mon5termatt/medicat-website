@@ -1,5 +1,10 @@
 ---
-title: EaseUS Todo Backup
+draft: false
+title: "EaseUS Todo Backup"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for EaseUS Todo Backup in MediCat USB
 ---
 

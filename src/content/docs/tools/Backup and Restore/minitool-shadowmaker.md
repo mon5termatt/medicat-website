@@ -1,5 +1,10 @@
 ---
-title: MiniTool ShadowMaker
+draft: false
+title: "MiniTool ShadowMaker"
+publishDate: "2025-4-19"
+category: "Backup"
+author: "MON5TERMATT"
+tags: [os, windows, tools]
 description: Documentation for MiniTool ShadowMaker in MediCat USB
 ---
 
