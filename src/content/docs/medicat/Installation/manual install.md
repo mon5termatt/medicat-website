@@ -79,7 +79,7 @@ tags: [medicat, installation, manual, guide]
 
 1. Re-enable your Antivirus software
 2. Test the USB drive by booting from it
-3. If you encounter any issues, refer to the [Troubleshooting Guide](/docs/medicat/troubleshooting/)
+3. If you encounter any issues, refer to the [Troubleshooting Guide](/docs/medicat/support/troubleshooting/)
 
 ## Alternative Installation Method
 
