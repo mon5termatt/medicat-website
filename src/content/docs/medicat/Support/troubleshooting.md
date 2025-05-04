@@ -101,6 +101,6 @@ tags: [medicat, troubleshooting, help, support]
 
 If you're still experiencing issues:
 1. Check the [Medicat Discord](https://discord.gg/medicat) for community support
-2. Review the [Installation Guide](/docs/medicat/Installation/) for detailed setup instructions
+2. Review the [Manual Installation Guide](/docs/medicat/installation/manualinstall) for detailed setup instructions
 
 Remember to always backup your data before attempting any system repairs or modifications. 

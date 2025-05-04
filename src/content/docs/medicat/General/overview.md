@@ -61,4 +61,4 @@ To begin using Medicat:
 3. Boot from your USB drive
 4. Select the tools you need from the menu
 
-For detailed installation instructions, please refer to the [Installation Guide](/docs/medicat/Installation/). 
+For detailed installation instructions, please refer to the [Manual Installation Guide](/docs/medicat/installation/manualinstall). 
