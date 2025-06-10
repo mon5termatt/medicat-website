@@ -1,8 +1,8 @@
 ---
 draft: false
 title: "Mini Windows 10"
-publishDate: "2025-4-19"
-category: "Tools"
+publishDate: "2025-6-10"
+category: "Live Operating Systems"
 author: "MON5TERMATT"
 tags: [medicat, tools, windows, pe, portable]
 ---
