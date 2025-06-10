@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "MemTest86+"
+title: "MemTest86Plus"
 publishDate: "2025-6-10"
 category: "Tools"
 author: "MON5TERMATT"
