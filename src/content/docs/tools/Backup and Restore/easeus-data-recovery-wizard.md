@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for EaseUS Data Recovery Wizard in MediCat USB
 ---
 
-# EaseUS Data Recovery Wizard
-
-EaseUS Data Recovery Wizard is a professional data recovery software designed to recover lost files.
-
 ## Overview
+EaseUS Data Recovery Wizard is a professional data recovery software designed to recover lost files.
 
 EaseUS Data Recovery Wizard helps you recover files that have been accidentally deleted, lost due to formatting, system crashes, virus attacks, or other scenarios. It supports recovery from various storage devices including hard drives, SSDs, USB drives, memory cards, and more.
 

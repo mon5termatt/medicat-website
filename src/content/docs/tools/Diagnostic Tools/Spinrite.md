@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, disk, recovery, maintenance]
 ---
 
-# Spinrite
-
 ## Overview
 Spinrite is a hard drive maintenance and recovery tool designed to repair damaged sectors and recover data.
 
@@ -29,7 +27,11 @@ Download Spinrite and create a bootable USB or CD.
 
 ## Additional Resources
 - [Official Website](https://www.grc.com/spinrite.htm)
-- [Documentation](https://www.grc.com/srmanual.htm)
+- [Documentation](https://www.grc.com/sr/user-manual.htm)
 
 ## Notes
 Spinrite is highly effective but can take time to complete scans.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

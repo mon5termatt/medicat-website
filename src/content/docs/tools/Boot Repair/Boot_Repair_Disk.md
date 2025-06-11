@@ -8,8 +8,6 @@ tags: [os, linux, windows, tools]
 description: Documentation for Boot Repair Disk in MediCat USB
 ---
 
-# Boot Repair Disk
-
 ## Overview
 Boot Repair Disk is a Linux-based rescue disk designed to fix boot issues.
 
@@ -32,3 +30,7 @@ Download the Boot Repair Disk ISO and create a bootable USB or CD.
 
 ## Notes
 Boot Repair Disk is user-friendly and suitable for beginners.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

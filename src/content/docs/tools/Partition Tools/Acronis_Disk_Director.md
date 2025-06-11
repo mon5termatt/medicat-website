@@ -7,10 +7,11 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, disk management]
 ---
 
-# Acronis Disk Director
-
 ## Overview
 Acronis Disk Director is a powerful tool for disk and partition management.
+
+### THIS PRODUCT IS END OF LIFE.
+All future versions of MedicatUSB will have this product removed.
 
 ## Features
 - Resize, split, and merge partitions.
@@ -29,8 +30,11 @@ Download and install Acronis Disk Director from the official website.
 - Supports most file systems and disk types.
 
 ## Additional Resources
-- [Official Website](https://www.acronis.com/en-us/products/disk-director/)
-- [Documentation](https://www.acronis.com/en-us/support/documentation/)
+- [Official Website](https://www.acronis.com/en-us/blog/posts/end-of-life-for-acronis-disk-director/)
 
 ## Notes
 Ensure you back up your data before making changes to partitions.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

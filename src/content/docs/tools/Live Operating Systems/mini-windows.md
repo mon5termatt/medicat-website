@@ -7,6 +7,7 @@ author: "MON5TERMATT"
 tags: [medicat, tools, windows, pe, portable]
 ---
 
+## Overview
 Mini Windows 10 is a lightweight, bootable Windows Preinstallation Environment (WinPE) included in Medicat. It provides a familiar Windows 10 interface while running entirely from RAM, making it perfect for system maintenance and recovery tasks.
 
 ## Key Features
@@ -117,3 +118,7 @@ If you encounter issues:
 3. Check for BIOS/UEFI compatibility
 4. Ensure proper USB drive formatting
 5. Try recreating the bootable USB 
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

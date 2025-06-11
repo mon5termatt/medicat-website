@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, disk management]
 ---
 
-# Parted Magic
-
 ## Overview
 Parted Magic is a Linux-based tool for partition management and disk operations.
 
@@ -29,7 +27,10 @@ Download Parted Magic and create a bootable USB or CD.
 
 ## Additional Resources
 - [Official Website](https://partedmagic.com/)
-- [Documentation](https://partedmagic.com/documentation/)
 
 ## Notes
 Parted Magic is a versatile tool for advanced disk operations.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

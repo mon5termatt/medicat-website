@@ -8,8 +8,6 @@ tags: [os, linux, windows, tools]
 description: Documentation for Rescatux in MediCat USB
 ---
 
-# Rescatux
-
 ## Overview
 Rescatux is a Linux-based rescue disk designed for repairing GRUB and other boot issues.
 
@@ -33,3 +31,7 @@ Download the Rescatux ISO and create a bootable USB or CD.
 
 ## Notes
 Rescatux is versatile and suitable for both beginners and advanced users.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

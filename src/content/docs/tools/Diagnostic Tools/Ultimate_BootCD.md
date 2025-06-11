@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, diagnostic, boot, utilities]
 ---
 
-# Ultimate Boot CD
-
 ## Overview
 Ultimate Boot CD (UBCD) is a collection of diagnostic tools for system repair and maintenance.
 
@@ -29,7 +27,11 @@ Download UBCD and create a bootable CD or USB.
 
 ## Additional Resources
 - [Official Website](https://www.ultimatebootcd.com/)
-- [Documentation](https://www.ultimatebootcd.com/docs.html)
+- [Documentation](https://www.ultimatebootcd.com/tutorials.html)
 
 ## Notes
 UBCD is a versatile tool for troubleshooting various system issues.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, disk management]
 ---
 
-# Paragon Hard Disk Manager
-
 ## Overview
 Paragon Hard Disk Manager is a comprehensive tool for disk and partition management.
 
@@ -30,7 +28,11 @@ Download and install Paragon Hard Disk Manager from the official website.
 
 ## Additional Resources
 - [Official Website](https://www.paragon-software.com/home/hdm-windows/)
-- [Documentation](https://www.paragon-software.com/support/)
+- [Documentation](https://download.paragon-software.com/doc/Paragon_Hard_Disk_Manager_17.pdf)
 
 ## Notes
 Paragon Hard Disk Manager is ideal for both personal and professional use.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

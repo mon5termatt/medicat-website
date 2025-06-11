@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for Acronis Cyber Backup in MediCat USB
 ---
 
-# Acronis Cyber Backup
-
-Acronis Cyber Backup is a comprehensive backup solution designed for businesses and IT professionals.
-
 ## Overview
+Acronis Cyber Backup is a comprehensive backup solution designed for businesses and IT professionals.
 
 Acronis Cyber Backup provides reliable protection for your data with features specifically designed for enterprise environments. It offers protection for various workloads including physical servers, virtual machines, cloud systems, and endpoints.
 

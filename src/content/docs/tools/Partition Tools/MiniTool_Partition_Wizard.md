@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, disk management]
 ---
 
-# MiniTool Partition Wizard
-
 ## Overview
 MiniTool Partition Wizard is a reliable tool for partition management.
 
@@ -30,7 +28,11 @@ Download and install MiniTool Partition Wizard from the official website.
 
 ## Additional Resources
 - [Official Website](https://www.partitionwizard.com/)
-- [Documentation](https://www.partitionwizard.com/help.html)
+- [Documentation](https://www.partitionwizard.com/help/)
 
 ## Notes
 MiniTool Partition Wizard is suitable for both personal and professional use.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

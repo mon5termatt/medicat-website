@@ -29,7 +29,10 @@ Download MemTest86+ and create a bootable USB or CD.
 
 ## Additional Resources
 - [Official Website](https://memtest.org/)
-- [Documentation](https://memtest.org/#documentation)
 
 ## Notes
 Ideal for older systems without UEFI support.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

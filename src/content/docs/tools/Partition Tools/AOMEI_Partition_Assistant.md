@@ -6,9 +6,6 @@ category: "Tools"
 author: "MON5TERMATT"
 tags: [medicat, tools, partition, disk management]
 ---
-
-# AOMEI Partition Assistant
-
 ## Overview
 AOMEI Partition Assistant is a versatile partition management tool.
 
@@ -29,8 +26,11 @@ Download and install AOMEI Partition Assistant from the official website.
 - Supports Windows systems.
 
 ## Additional Resources
-- [Official Website](https://www.aomeitech.com/partition-manager/)
-- [Documentation](https://www.aomeitech.com/help/)
+- [Official Website](https://www.aomeitech.com/pa/)
 
 ## Notes
 Use the tool carefully to avoid data loss.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

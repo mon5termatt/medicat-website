@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for Macrium Reflect in MediCat USB
 ---
 
-# Macrium Reflect
-
-Macrium Reflect is a powerful disk imaging and backup solution for Windows.
-
 ## Overview
+Macrium Reflect is a powerful disk imaging and backup solution for Windows.
 
 Macrium Reflect provides comprehensive backup and disk imaging solutions for personal and business use. It allows you to create complete backups of your disk partitions or entire disks, with options for scheduling, incremental backups, and differential backups.
 

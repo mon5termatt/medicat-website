@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for MiniTool Power Data Recovery in MediCat USB
 ---
 
-# MiniTool Power Data Recovery
-
-MiniTool Power Data Recovery is a comprehensive data recovery solution for retrieving lost or deleted files.
-
 ## Overview
+MiniTool Power Data Recovery is a comprehensive data recovery solution for retrieving lost or deleted files.
 
 MiniTool Power Data Recovery helps you recover files that have been accidentally deleted, lost due to formatting, system crashes, virus attacks, or other scenarios. It supports recovery from various storage devices including hard drives, SSDs, USB drives, memory cards, and more.
 

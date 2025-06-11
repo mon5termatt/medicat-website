@@ -8,8 +8,6 @@ tags: [os, windows, tools]
 description: Documentation for BootIt Bare Metal in MediCat USB
 ---
 
-# BootIt Bare Metal
-
 ## Overview
 BootIt Bare Metal is a powerful boot manager and partitioning tool for advanced users.
 
@@ -33,3 +31,7 @@ Download BootIt Bare Metal and follow the installation instructions.
 
 ## Notes
 BootIt Bare Metal is feature-rich and ideal for advanced users.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

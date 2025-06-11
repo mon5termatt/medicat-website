@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for Acronis True Image in MediCat USB
 ---
 
-# Acronis True Image
-
-Acronis True Image is a complete backup solution that ensures the safety of all information on your PC.
-
 ## Overview
+Acronis True Image is a complete backup solution that ensures the safety of all information on your PC.
 
 Acronis True Image provides reliable protection for your personal data, applications, and operating system. It creates an exact copy of your disk, including the operating system, applications, settings, and all data.
 

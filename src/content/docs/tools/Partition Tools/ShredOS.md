@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, secure erase]
 ---
 
-# ShredOS
-
 ## Overview
 ShredOS is a secure disk erasure tool based on Linux.
 
@@ -29,8 +27,11 @@ Download ShredOS and create a bootable USB or CD.
 - Works with most disk types and interfaces.
 
 ## Additional Resources
-- [Official Website](https://shredos.com/)
-- [Documentation](https://shredos.com/documentation/)
+- [Official Website](https://github.com/PartialVolume/shredos.x86_64)
 
 ## Notes
 ShredOS is ideal for securely erasing sensitive data.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

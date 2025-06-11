@@ -29,7 +29,11 @@ Download MemTest86 and create a bootable USB.
 
 ## Additional Resources
 - [Official Website](https://www.memtest86.com/)
-- [Documentation](https://www.memtest86.com/support.html)
+- [Documentation](https://www.memtest86.com/technical.htm)
 
 ## Notes
 Run MemTest86 for extended periods to ensure accuracy.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

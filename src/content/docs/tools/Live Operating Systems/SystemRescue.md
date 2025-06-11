@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, windows, pe, portable]
 ---
 
-# SystemRescue
-
 ## Overview
 SystemRescue is a Linux-based rescue disk designed for system recovery and maintenance.
 
@@ -33,3 +31,7 @@ Download the SystemRescue ISO and create a bootable USB or CD.
 
 ## Notes
 SystemRescue is versatile and suitable for advanced users.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

@@ -8,11 +8,9 @@ tags: [os, windows, tools]
 description: Documentation for Symantec Ghost in MediCat USB
 ---
 
-# Symantec Ghost
-
+## Overview
 Symantec Ghost (Ghost Solution Suite) is a powerful disk cloning and imaging solution.
 
-## Overview
 
 Symantec Ghost, which stands for "General Hardware-Oriented System Transfer," is a disk cloning tool used primarily for disk cloning, disk imaging, and deploying Windows operating systems to multiple computers. It's widely used in enterprise environments for system deployment and backup.
 

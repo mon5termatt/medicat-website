@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for Elcomsoft System Recovery in MediCat USB
 ---
 
-# Elcomsoft System Recovery
-
-Elcomsoft System Recovery is a specialized tool for password recovery and system access.
-
 ## Overview
+Elcomsoft System Recovery is a specialized tool for password recovery and system access.
 
 Elcomsoft System Recovery allows you to reset or recover passwords for Windows accounts, providing access to locked systems. It's a powerful tool for IT administrators and security professionals who need to regain access to Windows systems.
 

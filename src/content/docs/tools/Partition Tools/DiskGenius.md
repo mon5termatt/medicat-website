@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, partition, recovery]
 ---
 
-# DiskGenius
-
 ## Overview
 DiskGenius is a comprehensive tool for partition management and data recovery.
 
@@ -30,7 +28,11 @@ Download and install DiskGenius from the official website.
 
 ## Additional Resources
 - [Official Website](https://www.diskgenius.com/)
-- [Documentation](https://www.diskgenius.com/manual.php)
+- [Documentation](https://www.diskgenius.com/resource/)
 
 ## Notes
 DiskGenius is ideal for both partition management and data recovery.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

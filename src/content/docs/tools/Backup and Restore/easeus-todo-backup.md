@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for EaseUS Todo Backup in MediCat USB
 ---
 
-# EaseUS Todo Backup
-
-EaseUS Todo Backup is a comprehensive backup and recovery solution for Windows systems.
-
 ## Overview
+EaseUS Todo Backup is a comprehensive backup and recovery solution for Windows systems.
 
 EaseUS Todo Backup provides reliable backup and recovery options for your system, disks, partitions, files, and folders. It offers an intuitive interface with powerful features for data protection and disaster recovery.
 

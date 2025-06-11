@@ -8,8 +8,6 @@ tags: [os, windows, tools]
 description: Documentation for EasyUEFI in MediCat USB
 ---
 
-# EasyUEFI
-
 ## Overview
 EasyUEFI is a Windows-based tool for managing EFI/UEFI boot options.
 
@@ -29,7 +27,11 @@ Download EasyUEFI and install it on your Windows system.
 - Windows systems.
 
 ## Additional Resources
-- [Official Website](https://www.easyuefi.com/)
+- [Official Website](https://www.easyuefi.com/index-us.html)
 
 ## Notes
 EasyUEFI is intuitive and suitable for all users.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

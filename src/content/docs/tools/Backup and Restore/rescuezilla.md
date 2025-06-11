@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for Rescuezilla in MediCat USB
 ---
 
-# Rescuezilla
-
-Rescuezilla is an open-source disk imaging and cloning tool, often referred to as the "Swiss Army Knife of System Recovery."
-
 ## Overview
+Rescuezilla is an open-source disk imaging and cloning tool, often referred to as the "Swiss Army Knife of System Recovery."
 
 Rescuezilla (formerly Redo Backup and Recovery) is a free and open-source system rescue and backup solution. It provides an easy-to-use graphical interface for creating and restoring disk images, as well as performing various system recovery tasks.
 

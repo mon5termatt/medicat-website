@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, tools, diagnostic, hard drive, testing]
 ---
 
-# HDAT2
-
 ## Overview
 HDAT2 is a diagnostic tool for testing and repairing hard drives.
 
@@ -30,7 +28,10 @@ Download HDAT2 and create a bootable USB.
 
 ## Additional Resources
 - [Official Website](http://www.hdat2.com/)
-- [Documentation](http://www.hdat2.com/doc.html)
 
 ## Notes
 Use HDAT2 with caution as it can modify hard drive data.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

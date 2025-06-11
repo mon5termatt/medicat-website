@@ -8,8 +8,6 @@ tags: [os, linux, windows, tools]
 description: Documentation for Super GRUB2 Disk in MediCat USB
 ---
 
-# Super GRUB2 Disk
-
 ## Overview
 Super GRUB2 Disk is a bootable disk designed to help boot into operating systems when the bootloader is broken.
 
@@ -32,3 +30,7 @@ Download the Super GRUB2 Disk ISO and create a bootable USB or CD.
 
 ## Notes
 Super GRUB2 Disk is simple and effective for boot recovery.
+
+---
+
+*Disclaimer: This documentation was generated with AI assistance and may require review for complete accuracy and up-to-date information.*

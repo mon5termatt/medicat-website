@@ -8,11 +8,8 @@ tags: [os, windows, tools]
 description: Documentation for MiniTool ShadowMaker in MediCat USB
 ---
 
-# MiniTool ShadowMaker
-
-MiniTool ShadowMaker is a reliable backup and restore solution for Windows systems.
-
 ## Overview
+MiniTool ShadowMaker is a reliable backup and restore solution for Windows systems.
 
 MiniTool ShadowMaker provides comprehensive backup, restore, and clone solutions for Windows users. It offers an intuitive interface with powerful features for data protection and disaster recovery.
 
