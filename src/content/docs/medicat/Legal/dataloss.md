@@ -7,8 +7,6 @@ author: "MON5TERMATT"
 tags: [medicat, disclaimer, legal, warning]
 ---
 
-# Data Loss and Hardware Disclaimer
-
 ## ⚠️ Important Warning
 
 Before using Medicat, please read and understand the following important disclaimers regarding data loss and hardware damage.

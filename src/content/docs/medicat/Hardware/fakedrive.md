@@ -35,12 +35,14 @@ When purchasing a USB drive for Medicat, it's crucial to be aware of counterfeit
 ## Recommended USB Drives
 
 ### Trusted Brands
-- SanDisk
 - Samsung
+   - [SAMSUNG BAR Plus 3.1 USB Flash Drive (Amazon)](https://amzn.to/40j8NCm)
+- Patriot
+  - [Patriot Supersonic Rage Prime USB 3.2 Gen 2 Flash Drive (Amazon)](https://amzn.to/3Iw2Iwf)
+- SanDisk
 - Kingston
-- PNY
-- Corsair
 - Lexar
+
 
 ### Minimum Requirements
 - USB 3.0 or higher
@@ -117,3 +119,7 @@ Using counterfeit or fake drives with Medicat can lead to:
 - Your data's safety is worth the extra cost
 
 If you're unsure about a drive's authenticity, it's better to spend a little more on a verified product than risk data loss with a counterfeit drive. 
+
+## Amazon Disclaimer
+
+Please Note that links for amazon on this page contain affiliate links that may earn us a commision if you use our link. 
