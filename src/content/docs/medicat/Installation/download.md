@@ -18,7 +18,7 @@ tags: [medicat, install, download]
    - Torrent download (recommended for large files or unstable connections)
 3. Choose the appropriate version for your needs:
    - Full version (includes all tools)
-   - Lite version (essential tools only)
+   - Lite version (Not yet available.)
 
 ### System Requirements
 Before downloading, ensure your system meets the [requirements](/docs/medicat/installation/requirements):
