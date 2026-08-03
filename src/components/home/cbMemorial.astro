@@ -1,0 +1,152 @@
+---
+const photoSrc = "/b.jpg";
+---
+
+<div
+  id="cb-memorial"
+  class="cb-memorial fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cb-memorial-title"
+  hidden
+>
+  <div
+    class="cb-memorial-backdrop absolute inset-0 bg-black/75 backdrop-blur-sm"
+    data-cb-close
+  >
+  </div>
+
+  <div
+    class="cb-memorial-panel relative z-10 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-lg border border-white/10 bg-[#1a1614] text-slate-200 shadow-2xl"
+  >
+    <button
+      type="button"
+      class="absolute right-3 top-3 z-10 rounded px-2 py-1 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white"
+      data-cb-close
+      aria-label="Close"
+    >
+      ✕
+    </button>
+
+    <div class="flex flex-col gap-5 p-6 pt-8 sm:p-8">
+      <div class="text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-amber-200/60">
+          In loving memory
+        </p>
+        <h2
+          id="cb-memorial-title"
+          class="mt-2 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl"
+        >
+          CB
+        </h2>
+      </div>
+
+      <div
+        class="cb-photo mx-auto w-full max-w-xs overflow-hidden rounded-md bg-black/40 ring-1 ring-white/10"
+      >
+        <img
+          id="cb-memorial-photo"
+          src={photoSrc}
+          alt="CB"
+          class="hidden aspect-[4/5] w-full object-cover"
+          width="400"
+          height="500"
+        />
+        <div
+          id="cb-memorial-photo-placeholder"
+          class="flex aspect-[4/5] w-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-stone-800/80 to-stone-950/90 text-center text-stone-500"
+        >
+          <span class="text-5xl font-light tracking-widest text-stone-400/40"
+            >CB</span
+          >
+          <span class="px-4 text-xs text-stone-500">CB</span>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-center text-[15px] leading-relaxed text-slate-300">
+        <p>
+          Yesterday she'd gotten a steroid shot, IV fluids, and another shot to
+          try and get her eating again. We were hoping it'd turn things around,
+          but unfortunately it wasn't enough.
+        </p>
+        <p>
+          CB passed away today in my mom's arms. As far as we can tell, it was
+          peaceful. She was really only uncomfortable for the last five minutes,
+          and we're thankful she didn't have to suffer any longer than that.
+        </p>
+        <p>
+          She was a grumpy, antisocial old lady that tolerated me at best, but
+          she absolutely adored my parents. She'll definitely be missed around
+          here. ❤️
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="mx-auto mt-1 rounded border border-white/15 bg-white/5 px-6 py-2.5 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+        data-cb-close
+      >
+        Rest easy, CB
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const STORAGE_KEY = "cb-memorial-dismissed";
+
+  function initCbMemorial() {
+    const root = document.getElementById("cb-memorial");
+    if (!root) return;
+
+    if (localStorage.getItem(STORAGE_KEY) === "1") return;
+
+    const photo = document.getElementById("cb-memorial-photo");
+    const placeholder = document.getElementById("cb-memorial-photo-placeholder");
+
+    if (photo instanceof HTMLImageElement) {
+      const showPhoto = () => {
+        photo.classList.remove("hidden");
+        placeholder?.classList.add("hidden");
+      };
+
+      if (photo.complete && photo.naturalWidth > 0) {
+        showPhoto();
+      } else {
+        photo.addEventListener("load", showPhoto);
+        photo.addEventListener("error", () => {
+          photo.classList.add("hidden");
+          placeholder?.classList.remove("hidden");
+        });
+      }
+    }
+
+    const open = () => {
+      root.hidden = false;
+      root.classList.remove("hidden");
+      root.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    };
+
+    const close = () => {
+      root.hidden = true;
+      root.classList.add("hidden");
+      root.classList.remove("flex");
+      document.body.style.overflow = "";
+      localStorage.setItem(STORAGE_KEY, "1");
+    };
+
+    root.querySelectorAll("[data-cb-close]").forEach((el) => {
+      el.addEventListener("click", close);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !root.hidden) close();
+    });
+
+    // Small delay so the page settles before the popup.
+    setTimeout(open, 600);
+  }
+
+  initCbMemorial();
+</script>
