@@ -84,6 +84,11 @@ const nfConfig = JSON.stringify({
   .nf-main:not(.open) .nf-emoji {
     display: none !important;
   }
+
+  /* Embed defaults to 450px — stretch it for the multi-page survey */
+  .nf-main .nf-popup iframe {
+    height: min(80vh, 720px) !important;
+  }
 </style>
 
 <script
