@@ -1,14 +1,6 @@
 ---
 const surveyUrl =
   "https://forms.mon5termatt.com/forms/medicat-tools-survey-what-do-you-use-c9yt0i";
-
-const nfConfig = JSON.stringify({
-  formurl: surveyUrl,
-  emoji: "💬",
-  position: "left",
-  bgcolor: "#ff9500",
-  width: 500,
-});
 ---
 
 <div
@@ -79,62 +71,57 @@ const nfConfig = JSON.stringify({
   </div>
 </div>
 
-<style is:global>
-  /* Hide OpnForm floater when closed; show only as close control when open */
-  .nf-main:not(.open) .nf-emoji {
-    display: none !important;
-  }
+<div
+  id="tools-survey-modal"
+  class="fixed inset-0 z-[70] hidden items-end justify-center p-3 sm:items-center sm:p-6"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Medicat tools survey"
+  hidden
+>
+  <div
+    class="absolute inset-0 bg-black/70 backdrop-blur-sm"
+    data-survey-modal-close
+  >
+  </div>
 
-  /* Embed defaults to 450px — stretch it for the multi-page survey */
-  .nf-main .nf-popup iframe {
-    height: min(80vh, 720px) !important;
-  }
-</style>
+  <div
+    class="relative z-10 flex w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-[#111] shadow-2xl"
+    style="height: min(85vh, 820px);"
+  >
+    <div
+      class="flex shrink-0 items-center justify-between gap-3 border-b border-white/10 px-4 py-2.5"
+    >
+      <p class="text-sm font-medium text-slate-200">Medicat tools survey</p>
+      <button
+        type="button"
+        class="rounded px-2 py-1 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white"
+        data-survey-modal-close
+        aria-label="Close survey"
+      >
+        ✕
+      </button>
+    </div>
+    <iframe
+      id="tools-survey-frame"
+      title="Medicat tools survey"
+      class="h-full w-full flex-1 border-0 bg-white"
+      loading="lazy"
+    >
+    </iframe>
+  </div>
+</div>
 
-<script
-  is:inline
-  async
-  data-nf={nfConfig}
-  src="https://forms.mon5termatt.com/widgets/embed-min.js"
-></script>
-
-<script>
+<script define:vars={{ surveyUrl }}>
   const STORAGE_KEY = "medicat-tools-survey-dismissed";
-
-  function getEmbedButton() {
-    return document.querySelector(".nf-main .nf-emoji");
-  }
-
-  function openSurveyEmbed() {
-    const main = document.querySelector(".nf-main");
-    if (main?.classList.contains("open")) return true;
-
-    const emoji = getEmbedButton();
-    if (emoji instanceof HTMLElement) {
-      emoji.click();
-      return true;
-    }
-    return false;
-  }
-
-  function waitForEmbedButton(attempts = 40) {
-    return new Promise((resolve) => {
-      const tick = (left) => {
-        const emoji = getEmbedButton();
-        if (emoji || left <= 0) {
-          resolve(emoji);
-          return;
-        }
-        setTimeout(() => tick(left - 1), 100);
-      };
-      tick(attempts);
-    });
-  }
 
   function initToolsSurveyBanner() {
     const root = document.getElementById("tools-survey-banner");
     const confirmBox = document.getElementById("tools-survey-confirm");
-    if (!root || !confirmBox) return;
+    const modal = document.getElementById("tools-survey-modal");
+    const frame = document.getElementById("tools-survey-frame");
+    if (!root || !confirmBox || !modal || !(frame instanceof HTMLIFrameElement))
+      return;
     if (localStorage.getItem(STORAGE_KEY) === "1") return;
 
     const showConfirm = () => {
@@ -153,24 +140,38 @@ const nfConfig = JSON.stringify({
       localStorage.setItem(STORAGE_KEY, "1");
     };
 
+    const openModal = () => {
+      if (!frame.src) frame.src = surveyUrl;
+      modal.hidden = false;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeModal = () => {
+      modal.hidden = true;
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.style.overflow = "";
+    };
+
     root.querySelectorAll("[data-survey-dismiss]").forEach((el) => {
       el.addEventListener("click", showConfirm);
     });
-
     root.querySelectorAll("[data-survey-confirm-cancel]").forEach((el) => {
       el.addEventListener("click", hideConfirm);
     });
-
     root.querySelectorAll("[data-survey-confirm-yes]").forEach((el) => {
       el.addEventListener("click", dismissBanner);
     });
-
     root.querySelectorAll("[data-survey-open]").forEach((el) => {
-      el.addEventListener("click", async () => {
-        if (openSurveyEmbed()) return;
-        await waitForEmbedButton();
-        openSurveyEmbed();
-      });
+      el.addEventListener("click", openModal);
+    });
+    modal.querySelectorAll("[data-survey-modal-close]").forEach((el) => {
+      el.addEventListener("click", closeModal);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.hidden) closeModal();
     });
 
     root.hidden = false;
