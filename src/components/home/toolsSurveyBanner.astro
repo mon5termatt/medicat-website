@@ -1,0 +1,67 @@
+---
+const surveyUrl =
+  "https://forms.mon5termatt.com/forms/medicat-tools-survey-what-do-you-use-c9yt0i";
+---
+
+<div
+  id="tools-survey-banner"
+  class="fixed bottom-4 left-1/2 z-40 hidden w-[min(28rem,calc(100%-2rem))] -translate-x-1/2"
+  role="complementary"
+  aria-label="Medicat tools survey"
+  hidden
+>
+  <div
+    class="rounded-lg border border-white/15 bg-black/90 px-4 py-3 text-slate-200 shadow-2xl backdrop-blur-sm"
+  >
+    <div class="flex items-start gap-3">
+      <div class="min-w-0 flex-1">
+        <p class="text-sm font-semibold text-white">Help shape Medicat 2026</p>
+        <p class="mt-1 text-xs leading-relaxed text-slate-300">
+          Quick survey on which tools you still use — helps decide what to keep,
+          update, or drop.
+        </p>
+        <a
+          href={surveyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-2.5 inline-block rounded bg-white px-3 py-1.5 text-xs font-semibold text-black transition hover:bg-slate-200"
+        >
+          Take the survey
+        </a>
+      </div>
+      <button
+        type="button"
+        class="shrink-0 rounded px-1.5 py-0.5 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white"
+        data-survey-dismiss
+        aria-label="Dismiss survey banner"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const STORAGE_KEY = "medicat-tools-survey-dismissed";
+
+  function initToolsSurveyBanner() {
+    const root = document.getElementById("tools-survey-banner");
+    if (!root) return;
+    if (localStorage.getItem(STORAGE_KEY) === "1") return;
+
+    const dismiss = () => {
+      root.hidden = true;
+      root.classList.add("hidden");
+      localStorage.setItem(STORAGE_KEY, "1");
+    };
+
+    root.querySelectorAll("[data-survey-dismiss]").forEach((el) => {
+      el.addEventListener("click", dismiss);
+    });
+
+    root.hidden = false;
+    root.classList.remove("hidden");
+  }
+
+  initToolsSurveyBanner();
+</script>
