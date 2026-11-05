@@ -1,0 +1,222 @@
+---
+/**
+ * Reusable bottom banner + modal iframe for OpnForm (or any form URL).
+ *
+ * Usage (on a page):
+ *   import FormBanner from "@components/home/formBanner.astro";
+ *   <FormBanner
+ *     formUrl="https://forms.mon5termatt.com/forms/..."
+ *     title="Help shape Medicat 2026"
+ *     description="Quick survey on which tools you still use."
+ *     storageKey="medicat-tools-survey-dismissed"
+ *   />
+ */
+interface Props {
+  formUrl: string;
+  title: string;
+  description: string;
+  buttonLabel?: string;
+  modalTitle?: string;
+  storageKey: string;
+  dismissConfirmTitle?: string;
+  dismissConfirmBody?: string;
+  keepLabel?: string;
+  dismissLabel?: string;
+}
+
+const {
+  formUrl,
+  title,
+  description,
+  buttonLabel = "Open form",
+  modalTitle = title,
+  storageKey,
+  dismissConfirmTitle = "Dismiss this reminder?",
+  dismissConfirmBody = "You can still open the form later if you change your mind.",
+  keepLabel = "Keep it",
+  dismissLabel = "Dismiss",
+} = Astro.props;
+
+const id = `form-banner-${storageKey.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
+---
+
+<div
+  id={id}
+  class="fixed bottom-4 left-1/2 z-40 hidden w-[min(48rem,calc(100%-2rem))] -translate-x-1/2"
+  role="complementary"
+  aria-label={title}
+  data-form-banner
+  data-storage-key={storageKey}
+  hidden
+>
+  <div
+    class="rounded-lg border border-white/15 bg-black/90 px-5 py-4 text-slate-200 shadow-2xl backdrop-blur-sm"
+  >
+    <div class="flex items-start gap-4">
+      <div class="min-w-0 flex-1 text-center">
+        <p class="text-sm font-semibold text-white">{title}</p>
+        <p class="mt-1 text-xs leading-relaxed text-slate-300 sm:text-sm">
+          {description}
+        </p>
+        <button
+          type="button"
+          data-form-open
+          class="mt-3 inline-block rounded bg-white px-4 py-2 text-xs font-semibold text-black transition hover:bg-slate-200"
+        >
+          {buttonLabel}
+        </button>
+      </div>
+      <button
+        type="button"
+        class="shrink-0 rounded px-1.5 py-0.5 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white"
+        data-form-dismiss
+        aria-label="Dismiss form banner"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div
+      class="mt-3 hidden border-t border-white/10 pt-3 text-center"
+      data-form-confirm
+      hidden
+      role="dialog"
+      aria-label={dismissConfirmTitle}
+    >
+      <p class="text-sm font-medium text-white">{dismissConfirmTitle}</p>
+      <p class="mt-1 text-xs text-slate-400">{dismissConfirmBody}</p>
+      <div class="mt-3 flex justify-center gap-2">
+        <button
+          type="button"
+          data-form-confirm-cancel
+          class="rounded border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:bg-white/10"
+        >
+          {keepLabel}
+        </button>
+        <button
+          type="button"
+          data-form-confirm-yes
+          class="rounded bg-white px-3 py-1.5 text-xs font-semibold text-black transition hover:bg-slate-200"
+        >
+          {dismissLabel}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="fixed inset-0 z-[70] hidden items-end justify-center p-3 sm:items-center sm:p-6"
+  data-form-modal
+  data-form-banner-for={id}
+  role="dialog"
+  aria-modal="true"
+  aria-label={modalTitle}
+  hidden
+>
+  <div
+    class="absolute inset-0 bg-black/70 backdrop-blur-sm"
+    data-form-modal-close
+  >
+  </div>
+
+  <div
+    class="relative z-10 flex w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-[#111] shadow-2xl"
+    style="height: min(85vh, 820px);"
+  >
+    <div
+      class="flex shrink-0 items-center justify-between gap-3 border-b border-white/10 px-4 py-2.5"
+    >
+      <p class="text-sm font-medium text-slate-200">{modalTitle}</p>
+      <button
+        type="button"
+        class="rounded px-2 py-1 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white"
+        data-form-modal-close
+        aria-label="Close form"
+      >
+        ✕
+      </button>
+    </div>
+    <iframe
+      title={modalTitle}
+      data-form-frame
+      data-form-url={formUrl}
+      class="h-full w-full flex-1 border-0 bg-white"
+      loading="lazy"
+    >
+    </iframe>
+  </div>
+</div>
+
+<script>
+  function initFormBanner(root) {
+    const storageKey = root.getAttribute("data-storage-key");
+    const bannerId = root.id;
+    if (!storageKey || !bannerId) return;
+    if (localStorage.getItem(storageKey) === "1") return;
+
+    const confirmBox = root.querySelector("[data-form-confirm]");
+    const modal = document.querySelector(
+      `[data-form-modal][data-form-banner-for="${CSS.escape(bannerId)}"]`,
+    );
+    const frame = modal?.querySelector("[data-form-frame]");
+    if (!confirmBox || !modal || !(frame instanceof HTMLIFrameElement)) return;
+
+    const formUrl = frame.getAttribute("data-form-url") || "";
+
+    const showConfirm = () => {
+      confirmBox.removeAttribute("hidden");
+      confirmBox.classList.remove("hidden");
+    };
+
+    const hideConfirm = () => {
+      confirmBox.setAttribute("hidden", "");
+      confirmBox.classList.add("hidden");
+    };
+
+    const dismissBanner = () => {
+      root.setAttribute("hidden", "");
+      root.classList.add("hidden");
+      localStorage.setItem(storageKey, "1");
+    };
+
+    const openModal = () => {
+      if (!frame.src && formUrl) frame.src = formUrl;
+      modal.removeAttribute("hidden");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeModal = () => {
+      modal.setAttribute("hidden", "");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.style.overflow = "";
+    };
+
+    root.querySelectorAll("[data-form-dismiss]").forEach((el) => {
+      el.addEventListener("click", showConfirm);
+    });
+    root.querySelectorAll("[data-form-confirm-cancel]").forEach((el) => {
+      el.addEventListener("click", hideConfirm);
+    });
+    root.querySelectorAll("[data-form-confirm-yes]").forEach((el) => {
+      el.addEventListener("click", dismissBanner);
+    });
+    root.querySelectorAll("[data-form-open]").forEach((el) => {
+      el.addEventListener("click", openModal);
+    });
+    modal.querySelectorAll("[data-form-modal-close]").forEach((el) => {
+      el.addEventListener("click", closeModal);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.hasAttribute("hidden")) closeModal();
+    });
+
+    root.removeAttribute("hidden");
+    root.classList.remove("hidden");
+  }
+
+  document.querySelectorAll("[data-form-banner]").forEach(initFormBanner);
+</script>

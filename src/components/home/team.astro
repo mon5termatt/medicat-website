@@ -4,11 +4,11 @@ import Gizmo from "@assets/media/team/gizmo_site.png";
 import Kirk from "@assets/media/team/kirk_site.png";
 import Leo from "@assets/media/team/leo_site.png";
 import Pepe from "@assets/media/team/Pepe_site-1.png";
+import CB from "@assets/media/team/cb.jpg";
 
 import Matt from "@assets/media/team/matt.png";
 import Jayro from "@assets/media/team/jayro.png";
 import AAA3A from "@assets/media/team/AAA3A.png";
-
 
 import { Picture } from "@astrojs/image/components";
 ---
@@ -22,155 +22,191 @@ import { Picture } from "@astrojs/image/components";
     </h2>
     <p class="text-lg mt-4 text-slate-300">Meet the team behind Medicat</p>
   </div>
-  <div class="flex flex-wrap gap-5 py-5">
-    <div class="w-48 flex-auto">
-      <a href="https://www.youtube.com/watch?v=M3tIYdMR_Ao" target="_blank">
+
+  <!-- MON5TERMATT + cats -->
+  <div class="py-5">
+    <div class="flex flex-wrap justify-center items-start gap-4">
+      <div class="w-60">
+        <a href="https://mon5termatt.com" target="_blank">
+          <Picture
+            class="rounded"
+            src={Matt}
+            widths={[100, 210]}
+            alt="MON5TERMATT"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            MON5TERMATT
+          </h2>
+          <p class="text-center text-slate-300">
+            Site Designer and Developer <br />
+            Giant Homelab Nerd
+          </p>
+        </a>
+      </div>
+
+      <div class="w-48">
+        <a href="https://www.youtube.com/watch?v=M3tIYdMR_Ao" target="_blank">
+          <Picture
+            class="rounded"
+            src={Kirk}
+            widths={[100, 210]}
+            alt="Kirk"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            Kirk
+          </h2>
+          <p class="text-center text-slate-300">-Matt</p>
+        </a>
+      </div>
+
+      <div class="w-48">
         <Picture
           class="rounded"
-          src={Kirk}
+          src={Bandit}
           widths={[100, 210]}
-          alt="Kirk"
+          alt="Bandit"
           loading="eager"
           format="avif"
         />
         <h2
           class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
         >
-          Kirk
+          Bandit
         </h2>
         <p class="text-center text-slate-300">-Matt</p>
-      </a>
-    </div>
-    <div class="w-48 flex-auto">
-      <Picture
-        class="rounded"
-        src={Bandit}
-        widths={[100, 210]}
-        alt="Bandit"
-        loading="eager"
-        format="avif"
-      />
-      <h2
-        class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-      >
-        Bandit
-      </h2>
-      <p class="text-center text-slate-300">-Matt</p>
-    </div>
-    <div class="w-48 flex-auto">
-      <a href="https://www.youtube.com/watch?v=HeZpkv62L5g" target="_blank">
+      </div>
+
+      <div class="w-48">
         <Picture
           class="rounded"
-          src={Pepe}
+          src={CB}
           widths={[100, 210]}
-          alt="Pepe"
+          alt="CB"
           loading="eager"
           format="avif"
         />
         <h2
           class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
         >
-          Pepe
+          CB
         </h2>
-        <p class="text-center text-slate-300">-Jayro</p>
-      </a>
-    </div>
-    <div class="w-48 flex-auto">
-      <Picture
-        class="rounded"
-        src={Leo}
-        widths={[100, 210]}
-        alt="leo"
-        loading="eager"
-        format="avif"
-      />
-      <h2
-        class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-      >
-        Leo
-      </h2>
-      <p class="text-center text-slate-300">-Jayro</p>
-    </div>
-    <div class="w-48 flex-auto">
-      <Picture
-        class="rounded"
-        src={Gizmo}
-        widths={[100, 210]}
-        alt="Gizmo"
-        loading="eager"
-        format="avif"
-      />
-      <h2
-        class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-      >
-        Gizmo
-      </h2>
-      <p class="text-center text-slate-300">-Jayro</p>
+        <p class="text-center text-slate-300">-Matt</p>
+      </div>
     </div>
   </div>
-  <div class="flex flex-wrap justify-around items-center pt-5 gap-4">
-    <div class="w-60">
-      <a href="https://mon5termatt.com" target="_blank">
+
+  <!-- Jayro + cats -->
+  <div class="py-5">
+    <div class="flex flex-wrap justify-center items-start gap-4">
+      <div class="w-60">
+        <a href="https://linktr.ee/jayrojones" target="_blank">
+          <Picture
+            class="rounded"
+            src={Jayro}
+            widths={[100, 210]}
+            alt="Jayro"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            Jayro
+          </h2>
+          <p class="text-center text-slate-300">
+            Medicat Owner and Designer <br />
+            Gameboy Modder
+          </p>
+        </a>
+      </div>
+
+      <div class="w-48">
+        <a href="https://www.youtube.com/watch?v=HeZpkv62L5g" target="_blank">
+          <Picture
+            class="rounded"
+            src={Pepe}
+            widths={[100, 210]}
+            alt="Pepe"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            Pepe
+          </h2>
+          <p class="text-center text-slate-300">-Jayro</p>
+        </a>
+      </div>
+
+      <div class="w-48">
         <Picture
           class="rounded"
-          src={Matt}
+          src={Leo}
           widths={[100, 210]}
-          alt="MON5TERMATT"
+          alt="Leo"
           loading="eager"
           format="avif"
         />
         <h2
           class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
         >
-          MON5TERMATT
+          Leo
         </h2>
-        <p class="text-center text-slate-300">
-          Site Designer and Developer <br />
-           Giant Homelab Nerd
-        </p>
-      </a>
+        <p class="text-center text-slate-300">-Jayro</p>
+      </div>
+
+      <div class="w-48">
+        <Picture
+          class="rounded"
+          src={Gizmo}
+          widths={[100, 210]}
+          alt="Gizmo"
+          loading="eager"
+          format="avif"
+        />
+        <h2
+          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+        >
+          Gizmo
+        </h2>
+        <p class="text-center text-slate-300">-Jayro</p>
+      </div>
     </div>
-    <div class="w-60">
-      <a href="https://linktr.ee/jayrojones" target="_blank">
-        <Picture
-          class="rounded"
-          src={Jayro}
-          widths={[100, 210]}
-          alt="Jayro"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          Jayro
-        </h2>
-        <p class="text-center text-slate-300">
-          Medicat Owner and Designer <br />
-           Gameboy Modder
-        </p>
-      </a>
-    </div>
-    <div class="w-60">
-      <a href="https://www.buymeacoffee.com/aaa3a" target="_blank">
-        <Picture
-          class="rounded"
-          src={AAA3A}
-          widths={[100, 210]}
-          alt="AAA3A"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          AAA3A
-        </h2>
-        <p class="text-center text-slate-300">
-          Medicat Assistant Developer <br />
-           Redbot Cog Creator
-        </p>
-      </a>
+  </div>
+
+  <!-- AAA3A -->
+  <div class="pt-5">
+    <div class="flex flex-wrap justify-center items-center gap-4">
+      <div class="w-60">
+        <a href="https://www.buymeacoffee.com/aaa3a" target="_blank">
+          <Picture
+            class="rounded"
+            src={AAA3A}
+            widths={[100, 210]}
+            alt="AAA3A"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            AAA3A
+          </h2>
+          <p class="text-center text-slate-300">
+            Medicat Assistant Developer <br />
+            Redbot Cog Creator
+          </p>
+        </a>
+      </div>
     </div>
   </div>
 </div>
