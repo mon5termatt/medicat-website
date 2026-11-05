@@ -6,9 +6,12 @@ import Leo from "@assets/media/team/leo_site.png";
 import Pepe from "@assets/media/team/Pepe_site-1.png";
 import CB from "@assets/media/team/cb.jpg";
 
-import Matt from "@assets/media/team/matt.png";
 import Jayro from "@assets/media/team/jayro.png";
 import AAA3A from "@assets/media/team/AAA3A.png";
+import Expand from "@assets/media/team/expand.png";
+import LordSkeletonMan from "@assets/media/team/lord_skeletonman.png";
+import Mel from "@assets/media/team/mel.png";
+import Julie from "@assets/media/team/julie.png";
 
 import { Picture } from "@astrojs/image/components";
 ---
@@ -25,16 +28,16 @@ import { Picture } from "@astrojs/image/components";
 
   <!-- MON5TERMATT + cats -->
   <div class="py-5">
-    <div class="flex flex-wrap justify-center items-start gap-4">
+    <div class="flex flex-wrap justify-center items-start gap-8 lg:gap-16">
       <div class="w-60">
         <a href="https://mon5termatt.com" target="_blank">
-          <Picture
-            class="rounded"
-            src={Matt}
-            widths={[100, 210]}
+          <img
+            class="rounded w-full"
+            src="/team-matt.gif"
             alt="MON5TERMATT"
+            width="210"
+            height="210"
             loading="eager"
-            format="avif"
           />
           <h2
             class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
@@ -48,64 +51,63 @@ import { Picture } from "@astrojs/image/components";
         </a>
       </div>
 
-      <div class="w-48">
-        <a href="https://www.youtube.com/watch?v=M3tIYdMR_Ao" target="_blank">
+      <div class="flex flex-wrap justify-center items-start gap-4">
+        <div class="w-48">
+          <a href="https://www.youtube.com/watch?v=M3tIYdMR_Ao" target="_blank">
+            <Picture
+              class="rounded"
+              src={Kirk}
+              widths={[100, 210]}
+              alt="Kirk"
+              loading="eager"
+              format="avif"
+            />
+            <h2
+              class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+            >
+              Kirk
+            </h2>
+          </a>
+        </div>
+
+        <div class="w-48">
           <Picture
             class="rounded"
-            src={Kirk}
+            src={Bandit}
             widths={[100, 210]}
-            alt="Kirk"
+            alt="Bandit"
             loading="eager"
             format="avif"
           />
           <h2
             class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
           >
-            Kirk
+            Bandit
           </h2>
-          <p class="text-center text-slate-300">-Matt</p>
-        </a>
-      </div>
+        </div>
 
-      <div class="w-48">
-        <Picture
-          class="rounded"
-          src={Bandit}
-          widths={[100, 210]}
-          alt="Bandit"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          Bandit
-        </h2>
-        <p class="text-center text-slate-300">-Matt</p>
-      </div>
-
-      <div class="w-48">
-        <Picture
-          class="rounded"
-          src={CB}
-          widths={[100, 210]}
-          alt="CB"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          CB
-        </h2>
-        <p class="text-center text-slate-300">-Matt</p>
+        <div class="w-48">
+          <Picture
+            class="rounded"
+            src={CB}
+            widths={[100, 210]}
+            alt="CB"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            CB
+          </h2>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Jayro + cats -->
   <div class="py-5">
-    <div class="flex flex-wrap justify-center items-start gap-4">
+    <div class="flex flex-wrap justify-center items-start gap-8 lg:gap-16">
       <div class="w-60">
         <a href="https://linktr.ee/jayrojones" target="_blank">
           <Picture
@@ -128,83 +130,164 @@ import { Picture } from "@astrojs/image/components";
         </a>
       </div>
 
-      <div class="w-48">
-        <a href="https://www.youtube.com/watch?v=HeZpkv62L5g" target="_blank">
+      <div class="flex flex-wrap justify-center items-start gap-4">
+        <div class="w-48">
+          <a href="https://www.youtube.com/watch?v=HeZpkv62L5g" target="_blank">
+            <Picture
+              class="rounded"
+              src={Pepe}
+              widths={[100, 210]}
+              alt="Pepe"
+              loading="eager"
+              format="avif"
+            />
+            <h2
+              class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+            >
+              Pepe
+            </h2>
+          </a>
+        </div>
+
+        <div class="w-48">
           <Picture
             class="rounded"
-            src={Pepe}
+            src={Leo}
             widths={[100, 210]}
-            alt="Pepe"
+            alt="Leo"
             loading="eager"
             format="avif"
           />
           <h2
             class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
           >
-            Pepe
+            Leo
           </h2>
-          <p class="text-center text-slate-300">-Jayro</p>
-        </a>
-      </div>
+        </div>
 
-      <div class="w-48">
-        <Picture
-          class="rounded"
-          src={Leo}
-          widths={[100, 210]}
-          alt="Leo"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          Leo
-        </h2>
-        <p class="text-center text-slate-300">-Jayro</p>
-      </div>
-
-      <div class="w-48">
-        <Picture
-          class="rounded"
-          src={Gizmo}
-          widths={[100, 210]}
-          alt="Gizmo"
-          loading="eager"
-          format="avif"
-        />
-        <h2
-          class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
-        >
-          Gizmo
-        </h2>
-        <p class="text-center text-slate-300">-Jayro</p>
+        <div class="w-48">
+          <Picture
+            class="rounded"
+            src={Gizmo}
+            widths={[100, 210]}
+            alt="Gizmo"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+          >
+            Gizmo
+          </h2>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- AAA3A -->
+  <!-- Contributors row (up to 5 across) -->
   <div class="pt-5">
-    <div class="flex flex-wrap justify-center items-center gap-4">
-      <div class="w-60">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 justify-items-center">
+      <div class="w-full max-w-[9.5rem]">
         <a href="https://www.buymeacoffee.com/aaa3a" target="_blank">
           <Picture
             class="rounded"
             src={AAA3A}
-            widths={[100, 210]}
+            widths={[100, 152]}
             alt="AAA3A"
             loading="eager"
             format="avif"
           />
           <h2
-            class="mt-2 text-center text-blue-600 text-2xl lg:text-3xl font-bold lg:tracking-tight"
+            class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
           >
             AAA3A
           </h2>
-          <p class="text-center text-slate-300">
-            Medicat Assistant Developer <br />
-            Redbot Cog Creator
-          </p>
+        </a>
+      </div>
+
+      <div class="w-full max-w-[9.5rem]">
+        <a href="https://expand.sh/" target="_blank">
+          <Picture
+            class="rounded"
+            src={Expand}
+            widths={[100, 152]}
+            alt="Expand"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
+          >
+            Expand
+          </h2>
+        </a>
+      </div>
+
+      <div class="w-full max-w-[9.5rem]">
+        <img
+          class="rounded w-full"
+          src="/team-camellia.webp"
+          alt="Camellia"
+          width="152"
+          height="152"
+          loading="eager"
+        />
+        <h2
+          class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
+        >
+          Camellia
+        </h2>
+      </div>
+
+      <div class="w-full max-w-[9.5rem]">
+        <Picture
+          class="rounded"
+          src={LordSkeletonMan}
+          widths={[100, 152]}
+          alt="Lord SkeletonMan"
+          loading="eager"
+          format="avif"
+        />
+        <h2
+          class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
+        >
+          Lord SkeletonMan
+        </h2>
+      </div>
+
+      <div class="w-full max-w-[9.5rem]">
+        <a href="https://fox.pet/" target="_blank">
+          <Picture
+            class="rounded"
+            src={Mel}
+            widths={[100, 152]}
+            alt="Mel"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
+          >
+            Mel
+          </h2>
+        </a>
+      </div>
+
+      <div class="w-full max-w-[9.5rem]">
+        <a href="https://zoey-on-github.github.io/" target="_blank">
+          <Picture
+            class="rounded"
+            src={Julie}
+            widths={[100, 152]}
+            alt="Julie λ"
+            loading="eager"
+            format="avif"
+          />
+          <h2
+            class="mt-2 text-center text-blue-600 text-base lg:text-lg font-bold lg:tracking-tight"
+          >
+            Julie λ
+          </h2>
         </a>
       </div>
     </div>
